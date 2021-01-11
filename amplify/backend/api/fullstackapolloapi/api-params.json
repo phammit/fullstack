@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/graphql",
+            "lambdaFunction": "fullstackapolloapilamdafunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/graphql"
+        }
+    ],
+    "resourceName": "fullstackapolloapi",
+    "apiName": "fullstackapolloapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "fullstackapolloapilamdafunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-fullstack-dev-55007-authRole",
+        "unAuthRoleName": "amplify-fullstack-dev-55007-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "fullstackapolloapilamdafunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
